@@ -89,7 +89,7 @@
         <li><a href="/invista">Invista</a></li>
         <li><a href="/projetos">Micro Projetos</a></li>
         <li><a href="/duvidas">Dúvidas</a></li>
-        <li><a href="/cadastro">Cadastre-se</a></li>
+        <li><a href="/cadastro">Cadastre-se agora</a></li>
       </ul>
       
       <form class="navbar-form navbar-right" ($submit)="entrar">
