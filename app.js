@@ -35,11 +35,18 @@ head.load([
             // Call a function when done
             $('#conteudo').html(can.view.stache('<sistema-cadastro/>'))
             });
+
         },
-        'projetos route' : function(data){
-            head.load('/components/pages/projetos/todos/todos.js', function() {
+        'entrar route' : function(data){
+            head.load('/components/sistema/entrar/entrar.js', function() {
             // Call a function when done
-            $('#conteudo').html(can.view.stache('<projeto-todos/>'))
+            $('#conteudo').html(can.view.stache('<sistema-entrar/>'))
+            });
+        },
+        'principal route' : function(data){
+            head.load('/components/pages/principal/principal.js', function() {
+            // Call a function when done
+            $('#conteudo').html(can.view.stache('<principal/>'))
             });
         },
         'projetos/:id route' : function(data) {
@@ -58,9 +65,9 @@ head.load([
             $('#conteudo').html('entrou em :page/:id');
         },
         'route' : function(data){
-            head.load('/components/pages/projetos/todos/todos.js', function() {
+            head.load('/components/pages/principal/principal.js', function() {
             // Call a function when done
-            $('#conteudo').html(can.view.stache('<projeto-todos/>'))
+            $('#conteudo').html(can.view.stache('<principal/>'))
             });
         }
     });

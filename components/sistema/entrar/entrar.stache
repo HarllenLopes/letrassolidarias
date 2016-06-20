@@ -1,0 +1,27 @@
+<style type="text/css">
+  .entrar{
+
+  }
+</style>
+<div class="container">
+<div class="row">
+<div class="col-md-offset-3 col-md-3">
+<form class="entrar"($submit)="entrar">
+        
+          <table class="form-group-login">
+            <tr>
+              <td style="width:100px" >Usuário/Email: </td>
+              <td><input type="text" {($value)}="usuario" placeholder="Usuário ou Email" ></td>
+            </tr>
+            <tr>
+              <td>Senha:</td>
+              <td><input type="password" {($value)}="senha" placeholder="Senha de acesso" ></td>
+            </tr>
+          </table>
+        <div class="btns-login">  
+          <a href="#" > Esqueceu a senha?</a><button type="submit" class="btn btn-sm btn-success">Entrar</button>
+        </div>
+      </form>
+</div>
+</div>
+</div>
